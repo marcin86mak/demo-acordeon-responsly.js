@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo-slajder-responsly</title>
+    <link rel="stylesheet" href="accordly/accordly.css">
+</head>
+<body>
+
+<h4>Demo</h4>
+<h5>Podpowiedź, że możesz użyć klawiszy j/k</h5>
+
+<div class="accordion">
+    <!-- Section 1 -->
+    <section>
+        <hgroup>
+            <h4>I am section the Section 1 title</h4>
+        </hgroup>
+        <article>
+            <h2>And I can contain any html content!</h2>
+            <h4>Click through the steps below to see how to step me up</h4>
+        </article>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <hgroup>
+            <h4>Step 1</h4>
+        </hgroup>
+        <article>
+            <h4>Add references, make sure jQuery is available</h4>
+            <pre><code>
+    &lt;link rel="stylesheet" href="accordy.css"&gt;
+    &lt;script src="accordy.js"&gt;&lt;/script&gt;
+                    </code></pre>
+        </article>
+    </section>
+
+    <section>
+        <hgroup>
+            <h4>Step 2</h4>
+        </hgroup>
+        <article>
+            <h4>Add boilerplate HTML to wherever your want the accordion. This is usually some responsive container</h4>
+            <pre><code>
+    &lt;div class="accordion"&gt;
+        &lt;!-- Section 1 --&gt;
+        &lt;section&gt;
+            &lt;hgroup&gt;
+                &lt;h4&gt;Section 1 title&lt;/h4&gt;
+            &lt;/hgroup&gt;
+            &lt;article&gt;
+                &lt;h2&gt; Put your content here &lt;/h2&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+
+        &lt;!-- Section 2 --&gt;
+        &lt;section&gt;
+            &lt;hgroup&gt;
+                &lt;h4&gt;Section 2 title&lt;/h4&gt;
+            &lt;/hgroup&gt;
+            &lt;article&gt;
+                &lt;h2&gt; This is more context and can contain anything&lt;/h2&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+
+        &lt;!-- Add more sections as needed --&gt;
+
+    &lt;/div&gt;
+                    </code></pre>
+        </article>
+    </section>
+
+    <section>
+        <hgroup>
+            <h4>Step 3</h4>
+        </hgroup>
+        <article>
+            <h4>Wire up with options</h4>
+            <pre><code>
+    $('.accordion').accordy({
+        // Options go here, see slidy.js
+        // These the defaults so don't only need to be specified if they are changed
+
+        throttle: false, // Set to true, and include jQuery throttle plugin (http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+        throttleTime: 500, // number of ms to wait for throttling
+        useKeybord: true, // use keys defined below to expand / collapse sections
+        keyPressUp: 75, //K
+        keyPressDown: 74 //J
+    });
+                    </code></pre>
+        </article>
+    </section>
+</div>
+<script type="module" src="src/app.js"></script>
+
+</body>
+</html>
