@@ -1,5 +1,5 @@
 import'./jquery'
-import {goAccordly} from "./configure-accordly";
+import {goAccordy} from "./configure-accordly";
 
 
-goAccordly()
+goAccordy()

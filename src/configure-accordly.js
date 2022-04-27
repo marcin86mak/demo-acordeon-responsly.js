@@ -1,6 +1,6 @@
 import'../accordly/accordly'
 
-export function goAccordly() {
+export function goAccordy() {
     $('.accordion').accordy({
     });
 }
